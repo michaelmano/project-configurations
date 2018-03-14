@@ -1,0 +1,37 @@
+{
+  "name": "project-configurations",
+  "version": "1.0.0",
+  "description": "Short Description",
+  "main": "app/js/index.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=development node_modules/.bin/mocha --compilers js:babel-core/register --recursive tests/js",
+    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch-poll": "npm run watch --watch-poll",
+    "prod": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/username/repository.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/username/repository/issues"
+  },
+  "homepage": "https://github.com/username/repository#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "chai": "^4.1.2",
+    "cross-env": "^5.1.4",
+    "eslint": "^4.18.2",
+    "eslint-config-google": "^0.9.1",
+    "mocha": "^5.0.4"
+  },
+  "dependencies": {
+    "laravel-mix": "^2.1.0"
+  }
+}

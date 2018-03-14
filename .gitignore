@@ -1,0 +1,13 @@
+node_modules/
+vendors/
+
+## Remove once out of development
+# .env
+# package.lock
+# composer.lock
+# yarn.lock
+
+## OS and Editor files and folders
+
+.DS_Store
+.vscode/

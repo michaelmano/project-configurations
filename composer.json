@@ -1,0 +1,28 @@
+{
+  "name": "project-configurations",
+  "description": "Short Description",
+  "require": {
+      "php": ">=5.3.2"
+  },
+  "license": "MIT",
+  "authors": [
+      {
+          "name": "",
+          "homepage": "https://github.com/username/repository#readme"
+      }
+  ],
+  "require-dev": {
+      "mockery/mockery": "0.9.*",
+      "phpunit/phpunit": "~5.7"
+  },
+  "autoload": {
+      "psr-4": {
+          "namespace\\application_name": "app/"
+      }
+  },
+  "autoload-dev": {
+      "psr-4": {
+          "Tests\\": "tests/"
+      }
+  }
+}
