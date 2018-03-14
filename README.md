@@ -44,24 +44,6 @@ project-configurations/
 `-- webpack.mix.js
 ```
 
-** For a print out like the above you can use the shell script below **
-
-```bash
-#!/bin/bash
-
-SEDMAGIC='s;[^/]*/;|____;g;s;____|; |;g'
-
-if [ "$#" -gt 0 ] ; then
-   dirlist="$@"
-else
-   dirlist="."
-fi
-
-for x in $dirlist; do
-     find "$x" -print | sed -e "$SEDMAGIC"
-done
-```
-
 ## Development
 
 Project Development description.
