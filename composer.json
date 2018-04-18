@@ -17,7 +17,7 @@
   },
   "autoload": {
       "psr-4": {
-          "namespace\\application_name": "app/"
+          "namespace\\application_name": "src/"
       }
   },
   "autoload-dev": {
